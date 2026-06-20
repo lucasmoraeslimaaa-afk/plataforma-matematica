@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Futuro Virtual - Painel do Professor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { margin: 0; font-family: 'Plus Jakarta Sans', sans-serif; background: #f8fafc; display: flex; height: 100vh; }
+        .sidebar { width: 260px; background: #0f172a; padding: 30px 20px; display: flex; flex-direction: column; justify-content: space-between; color: white; }
+        .logo { font-size: 20px; font-weight: 800; color: #38bdf8; display: flex; align-items: center; gap: 10px; margin-bottom: 40px; }
+        .nav-btn { display: flex; align-items: center; gap: 12px; padding: 14px; color: #94a3b8; font-weight: 600; text-decoration: none; border-radius: 8px; margin-bottom: 8px; }
+        .nav-btn.active { background: #1e293b; color: #38bdf8; }
+        .main-content { flex: 1; overflow-y: auto; padding: 40px; }
+        .card-dash { background: white; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+        h1 { margin: 0 0 20px 0; color: #0f172a; font-size: 28px; }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div>
+            <div class="logo">⚙️ Admin Control</div>
+            <a class="nav-btn active">📊 Visão Geral</a>
+            <a class="nav-btn">👥 Alunos Cadastrados</a>
+            <a class="nav-btn">📈 Notas e Envios</a>
+        </div>
+        <a href="/login" class="nav-btn" style="color: #475569;">Refazer Login</a>
+    </div>
+    <div class="main-content">
+        <h1>Painel do Administrador</h1>
+        <div class="card-dash">
+            <h3 style="margin-top: 0; color: #1e293b;">Controle de Atividades</h3>
+            <p style="color: #64748b; font-size: 15px;">Monitore as interações e respostas dos questionários de fixação enviados pelos alunos através da plataforma integrada.</p>
+        </div>
+    </div>
+</body>
+</html>
